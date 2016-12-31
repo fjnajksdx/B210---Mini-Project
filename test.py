@@ -3,7 +3,7 @@
 from pexpect import pxssh
 
 a = pxssh.pxssh()
-if not a.login ('25.34.188.166', 'bobi', 'b'):
+if not a.login ('server', 'username', 'password'):
     print "SSH session failed on login."
     print str(a)
 else:
